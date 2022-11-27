@@ -1,0 +1,191 @@
+.wps-full-wrapper {
+
+   .wps-main-nav{
+        background-color: #192542;
+        display: flex;
+        padding: 8px 24px;
+        justify-content: space-between;
+        height: 72px;
+
+        .wps-logo {
+            max-width: 52px;
+            width: 52x;
+            min-width: 52px;
+            margin-right: 20px;
+
+            img { width: 100%;}
+        }
+
+        .wps-desktop {
+            display: none;
+
+            @media (min-width: 992px) {
+                display: flex;
+            }
+        }
+
+        .left,
+        .right,
+        .wps-dropdown-section,
+        .wps-settings {
+            display: flex;
+            align-items: center;
+        }
+
+        .wps-settings {
+            margin-left: 20px;
+        }
+
+        .wps-breadcrumb,
+        .wps-user {
+            display: none;
+        }
+
+        .wps-theme .wps-theme-text {
+            display: none;
+        }
+
+        .wps-theme {
+            margin-right: 20px;
+            position: relative;
+            padding-right: 20px;
+            cursor: pointer;
+
+            &:after {
+                content: "";
+                display: block;
+                width: 1px;
+                height: 50px;
+                background-color: #979797;
+                position: absolute;
+                right: 0;
+                top: -17px;
+            }
+        }
+
+        .wps-login-info {
+
+            a {
+                color: #F52D56;
+                text-decoration: none;
+                font-size: 16px;
+            }
+        
+        }
+
+        .select-dropdown__button {
+            width: 130px;
+            background: #FFFFFF;
+            border: 1px solid #EAEDEF;
+            box-shadow: 0 2px 20px 0 rgba(255,255,255,0.40);
+            border-radius: 100px;
+            font-size: 14px;
+            color: #242E42;
+            position: relative;
+
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 10px;
+                height: 6px;
+                background: url('../img/down-arrow-sm.svg');
+                right: 12px;
+                top: 14px;
+            }
+        }
+
+        @media (min-width: 768px) {
+
+            .wps-logo {
+                margin-right: 50px;
+            }
+
+            .wps-breadcrumb,
+            .wps-user {
+                display: flex;
+            }
+
+            .wps-theme {
+                display: flex;
+
+                .wps-theme-icon {
+                    margin-right: 12px;
+                }
+            }
+
+            .select-dropdown__button {
+                width: 158px;
+            }
+
+            .wps-breadcrumb {
+                display: flex;
+                align-items: center;
+    
+                &::before {
+                    content: "";
+                    display: flex;
+                    width: 5px;
+                    height: 10px;
+                    background-image: url('../img/right-arrow-red.svg');
+                    margin-right: 6px;
+                    background-repeat: no-repeat;
+                }
+    
+                a {
+                    font-size: 16px;
+                    color: #FFFFFF;
+                    text-align: left;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-weight: 400;
+                }
+            }
+
+            .right {
+                width: 65%;
+                justify-content: space-between;
+            }
+
+            .wps-user {
+                margin-left: 25px;
+                font-size: 16px;
+                color: #FFFFFF;
+                font-weight: 500;
+
+                .wps-user-icon {
+                    width: 21px;
+                    height: 21px;
+                    border-radius: 50%;
+                    background-color: #B50EBA;
+                    margin-right: 12px;
+                }
+            }
+
+        }
+
+        @media (min-width: 992px) {
+
+            .wps-logo {
+                width: 200px;
+                min-width: 200px;
+                margin-right: 138px;
+            }
+
+            .wps-mobile {
+                display: none;
+            }
+
+            .right {
+                width: 50%;
+            }
+
+            .wps-theme .wps-theme-text {
+                display: flex;
+                color: #ffffff;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+   }
+}

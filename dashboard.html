@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Dashboard</title>
+</head>
+<body class="wps-full-wrapper light-theme">
+
+    <!-- MAIN NAV -->
+    <nav class="wps-main-nav">
+        <div class="left">
+            <div class="wps-logo wps-desktop"><img src="./img/wp-smart-contracts-logo.png"></div>
+            <div class="wps-logo wps-mobile"><img src="./img/wp-smart-contracts-logo-figure.png"></div>
+            <ul class="wps-breadcrumb">
+                <li><a href="#">Dashboard</a></li>
+            </ul>
+        </div>  
+        <div class="right">
+            <div class="wps-dropdown-section">
+                <!-- Each select should have an unique ID -->
+                <select id="normal-select-1" placeholder-text="Last 7 days">
+                    <option value="opt1" class="select-dropdown__list-item">Last 7 days</option>
+                    <option value="opt2" class="select-dropdown__list-item">Last 5 days</option>
+                    <option value="opt3" class="select-dropdown__list-item">Last 3 days</option>
+                </select>
+
+                <div class="wps-user"><span class="wps-user-icon"></span>0x123…890</div>
+            </div>
+            <div class="wps-settings">
+                <div class="wps-theme" id="wps-theme">
+                    <span class="wps-theme-icon"></span>
+                    <span class="wps-theme-text light-text">Dark theme</span>
+                    <span class="wps-theme-text dark-text">Light theme</span>
+                </div>
+                <div class="wps-login-info"><a href="javascript:void(0);">Logout</a></div>
+            </div>
+
+        </div>      
+    </nav>
+
+    <!-- MOBILE SECONDARY NAV -->
+    <!-- <section class="mobile-secondary-nav">
+        <button class="wps-accordion">Secondary Nav <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 7.71" ><path d="M12.8.21L7 6 1.21.21a.7.7 0 00-1 0 .7.7 0 000 1L6.5 7.5a.7.7 0 001 0l6.29-6.29a.7.7 0 000-1 .69.69 0 00-.99 0z"></path></svg></button>
+        <div class="panel">
+            <div class="links">
+                <a href="#" class="link">Dashboard</a>
+            </div>  
+            
+            <div class="link-alone">
+                <a href="#">Knowledge base</a>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- WSP CONTENT -->
+    
+
+    <script src="./js/dropdown.js"></script>
+    <script src="./js/wps-theme.js"></script>
+    <!-- <script src="./js/secondary-nav.js"></script> -->
+
+    
+    
+</body>
+</html>

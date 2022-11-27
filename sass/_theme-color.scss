@@ -1,0 +1,29 @@
+.wps-full-wrapper {
+
+    &.light-theme {
+
+        .dark-text { display: none !important;}
+
+        .wps-theme-icon {
+            background-image: url('../img/moon-solid.svg');
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 18px;
+            display: flex;
+        }
+    }
+
+    &.dark-theme {
+
+        .light-text { display: none !important;}
+
+        .wps-theme-icon {
+            background-image: url('../img/sun-solid.svg');
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 18px;
+            display: flex;
+        }
+    }
+   
+}
