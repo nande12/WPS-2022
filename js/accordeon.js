@@ -1,0 +1,28 @@
+document.addEventListener("DOMContentLoaded", function(event) {
+
+    var acc = document.getElementsByClassName("wps-accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+
+
+            this.classList.toggle("active");
+            var wpsMobileDirection = this.querySelector('.wps-mobile-direction');
+
+            if (this.classList.contains('active')) {
+                wpsMobileDirection.textContent = 'Click to close';
+            }else {
+                wpsMobileDirection.textContent = 'Click to open';
+            }
+
+            var panel = this.nextElementSibling;
+            
+            if (panel.style.maxHeight) {
+                panel.style.maxHeight = null;
+            } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+        });
+    }
+});

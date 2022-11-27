@@ -10,8 +10,16 @@
 @import "secondary-nav";
 @import "dropdown-custom";
 @import "theme-color";
+@import "accordeon";
+@import "grid";
+@import "tables";
 
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #ECF0F0;
+}
+
+body.dark-theme {
+    background-color: #000000;
 }

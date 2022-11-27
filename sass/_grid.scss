@@ -1,0 +1,174 @@
+.wps-full-wrapper {
+
+    //Dashboard
+    .wps-dashboard-grid {
+        padding: 20px;
+
+        .wps-column-box {
+            box-shadow: 0 0 20px 0 rgba(215,222,227,0.56);
+            border-radius: 8px;
+            background-color: #ffffff;
+        }
+    
+        .nft-dashboard {
+            background: #FF017B;
+        }
+    
+        .wps-colBox-title-lg {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 54px;
+            background-color: #192542;
+            padding: 9px 17px;
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: 600;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+    
+            img {
+                margin-right: 12px;
+            }
+
+            &.wps-colBox-title-inner {
+                background-color: #CECECE;
+                font-size: 16px;
+                font-weight: 600;
+                color: #242E42;
+            }
+        }
+    
+        .wps-mobile-direction {
+            margin-left: auto;
+            font-size: 14px;
+            font-weight: 400;
+            color: #ff017b;
+        }
+    
+        .wps-colBox-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 9px 17px;
+        }
+    
+        .select-dropdown__button {
+            background: #FFFFFF;
+            border: 1px solid #EAEDEF;
+            box-shadow: 0 2px 20px 0 rgba(207,217,223,0.40);
+            border-radius: 100px;
+            width: 80px;
+        }
+
+        .wps-colBox-price {
+            padding: 9px 17px;
+            text-align: left;
+
+            * {
+                font-size: 36px;
+                color: #FFFFFF;
+                font-weight: 600;
+            }
+
+            .wps-colBox-cents {
+                font-size: 20px;
+                color: #FFFFFF;
+                position: relative;
+                top: -12px;
+            }
+        }
+
+        .wps-colBox-top p {
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+
+        .wps-colBox-bottomInfo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #ffffff;
+            width: 100%;
+            height: 37px;
+            padding: 0 0 0 17px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+
+        .wps-period-detail {
+            font-size: 14px;
+            color: #38B900;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            padding-top: 9px;
+            padding-bottom: 9px;
+
+            .icon {
+                margin-right: 8px;
+                width: 10px;
+                height: 10px;
+                display: flex;
+            }
+
+            &.wps-period-detail-green {
+                color: #38B900;
+
+                .icon {
+                    background-image: url('../img/up-arrow-green.svg');
+                }
+            }
+
+            &.wps-period-detail-red {
+                color: #FF004B;
+
+                .icon {
+                    background-image: url('../img/down-arrow-red.svg');
+                }
+            }
+        }
+
+        .wps-colBox-seeDetails {
+            height: 37px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 400;
+            color: #F52D56;
+            border-left: 1px solid #E9E9E9; 
+            padding: 0 37px;           
+        }
+
+        .wps-colBox-seeAll {
+            height: 37px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: 400;
+            color: #F52D56;
+            border: 1px solid #F52D56;  
+            width: 99px;    
+            border-bottom-right-radius: 8px;
+            border-top-left-radius: 8px;   
+            text-decoration: none;   
+        }
+
+        .wps-colBox-cta {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .wps-panel {
+            padding-top: 20px;
+        }
+    
+        @media (min-width: 992px) {
+            .wps-mobile-direction {
+                display: none;
+            }
+        }
+    }
+}

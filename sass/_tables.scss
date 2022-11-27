@@ -1,0 +1,61 @@
+.wps-full-wrapper {
+
+    .wps-smartContracts-table {
+        padding: 37px 16px;
+    }
+
+    .wps-table {
+        .wps-table-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: solid 1px #D8D8D8;
+
+            a {
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: 400;
+                color: #168FEB;
+            }
+        }
+
+        .wps-flag {text-decoration: none;
+            padding: 4px 8px;
+            border-radius: 8px;
+            width: 58px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+        }
+
+        .wps-table-copy {
+            background-color: transparent;
+            padding: 0 4px;
+            margin: 0;
+            border: none;
+            cursor: pointer;
+        }
+
+        .wps-bg-red{
+            background: #ED2E4E;
+        }
+
+        .wps-bg-green{
+            background: #3BCA52;
+        }
+
+        .wps-bg-yellow{
+            background: #FFCE53;
+        }
+
+        .wps-bg-purple{
+            background: #6601AE;
+        }
+
+        .wps-bg-brown{
+            background: #83450E;
+        }
+    }
+}
