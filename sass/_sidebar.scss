@@ -64,6 +64,20 @@
                 margin-top: 10px;
                 margin-bottom: 70px;
             }
+
+            .wps-heading-link.wps-active-heading {
+                padding-top: 0;
+            }
+
+            .wps-active-heading .wps-nav-main-link {
+                background-color: #FF017B;
+                width: calc(100% - 24px);
+                display: flex;
+                height: 45px;
+                align-items: center;
+                margin: 0 12px;
+                border-radius: 8px;
+            }
         }
     }
 
