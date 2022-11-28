@@ -62,11 +62,16 @@
                 max-width: 900px;
                 margin: auto;
                 justify-content: space-between;
+                text-align: left;
             }
 
             .wps-footer-bottom {
                 max-width: 900px;
                 margin: auto;
+            }
+
+            .wps-footer-col {
+                text-align: left;
             }
         }
 
