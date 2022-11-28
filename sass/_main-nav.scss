@@ -169,4 +169,26 @@
             }
         }
    }
+
+   //DARK THEME
+   &.dark-theme {
+
+    .wps-main-nav {
+
+        .wps-breadcrumb a,
+        .wps-user,
+        .wps-theme-text {
+            color: #ffffff;
+        }
+
+        .wps-login-info a {
+            color: #00C7C3;
+        }
+        
+        .select-dropdown__button {
+            box-shadow: none;
+        }
+    }
+
+   }
 }
