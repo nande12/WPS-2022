@@ -23,13 +23,16 @@
         }
 
         .wps-flag {text-decoration: none;
-            padding: 2px 4px;
             border-radius: 8px;
             width: 54px;
             display: flex;
             align-items: center;
             justify-content: center;
             color: #ffffff;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 9px 6px 6px;
+
         }
 
         .wps-table-copy,
@@ -39,6 +42,48 @@
             margin: 0;
             border: none;
             cursor: pointer;
+        }
+
+        .wps-table-qr {
+            position: relative;
+
+            .wps-tooltip {
+                display: none;
+                width: 200px;
+                height: 200px;
+                background-color: #ffffff;
+                border-radius: 8px;
+                padding: 20px;
+                position: absolute;
+                top: -206px;
+                left: -100px;
+                z-index: 2;
+                background: #FFFFFF;
+                box-shadow: 0 0 20px 0 rgba(215,222,227,0.62);
+                border: solid 1px #ececec;
+                padding-top: 20px;
+                text-align: center;
+                padding-bottom: 0;
+                padding-left: 0;
+                padding-right: 0;
+
+                .wps-tooltip-bottom-content {
+                    width: 100%;
+                    padding: 10px;
+                    background-color: #ececec;
+                    color: #000000;
+                    text-align: center;
+                    margin-top: auto;
+                }
+            }
+
+            &:hover {
+                .wps-tooltip {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+
         }
 
         .wps-row-text {
