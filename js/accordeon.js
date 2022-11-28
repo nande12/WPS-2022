@@ -4,25 +4,27 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var i;
 
     for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function() {
+        acc[i].addEventListener("click", function(e) {
 
+            if(!e.target.classList.contains('select-dropdown--1')) {
+                this.classList.toggle("active");
+                var wpsMobileDirection = this.querySelector('.wps-mobile-direction');
 
-            this.classList.toggle("active");
-            var wpsMobileDirection = this.querySelector('.wps-mobile-direction');
+                if (this.classList.contains('active')) {
+                    wpsMobileDirection.textContent = 'Click to close';
+                }else {
+                    wpsMobileDirection.textContent = 'Click to open';
+                }
 
-            if (this.classList.contains('active')) {
-                wpsMobileDirection.textContent = 'Click to close';
-            }else {
-                wpsMobileDirection.textContent = 'Click to open';
+                var panel = this.nextElementSibling;
+                
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                } 
             }
 
-            var panel = this.nextElementSibling;
-            
-            if (panel.style.maxHeight) {
-                panel.style.maxHeight = null;
-            } else {
-                panel.style.maxHeight = panel.scrollHeight + "px";
-            } 
         });
     }
 });

@@ -42,7 +42,7 @@
             background-color: #192542;
             padding: 9px 17px;
             color: #ffffff;
-            font-size: 24px;
+            font-size: 22px;
             font-weight: 600;
             border-top-left-radius: 8px;
             border-top-right-radius: 8px;
@@ -190,6 +190,12 @@
             padding-top: 20px;
         }
 
+        .chart-container {
+            width: 190px;
+            margin: auto;
+            padding-top: 40px;
+        }
+
         @media (min-width: 768px) {
             .wps-colums {
                 display: flex;
@@ -213,6 +219,16 @@
                 .wps-dash-column {
                     width: 24%;
                 }
+            }
+
+            .wps-colBox-title-lg {
+                font-size: 21px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .wps-colBox-title-lg {
+                font-size: 24px;
             }
         }
     }
