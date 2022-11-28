@@ -13,6 +13,7 @@
 @import "accordeon";
 @import "grid";
 @import "tables";
+@import "sidebar";
 
 
 body {
@@ -22,4 +23,18 @@ body {
 
 body.dark-theme {
     background-color: #000000;
+}
+
+.wps-main-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .wps-content-page {
+        width: 100%;
+    }
+
+    @media (min-width: 992px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }

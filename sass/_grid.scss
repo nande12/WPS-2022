@@ -5,13 +5,14 @@
         padding: 20px;
 
         .wps-dash-column {
-            margin-bottom: 20px;
+            margin-bottom: 0;
         }
 
         .wps-column-box {
             box-shadow: 0 0 20px 0 rgba(215,222,227,0.56);
             border-radius: 8px;
             background-color: #ffffff;
+            margin-top: 20px;
 
             &.wps-column-box-inner {
                 margin-bottom: 20px;
@@ -187,7 +188,7 @@
         }
 
         .wps-panel {
-            padding-top: 20px;
+            margin-top: 0;
         }
 
         .chart-container {
@@ -208,7 +209,7 @@
             }
         }
     
-        @media (min-width: 992px) {
+        @media (min-width: 1300px) {
             .wps-mobile-direction {
                 display: none;
             }
@@ -217,18 +218,20 @@
                 flex-wrap: nowrap;
 
                 .wps-dash-column {
-                    width: 24%;
+                    width: 23.5%;
                 }
             }
 
             .wps-colBox-title-lg {
                 font-size: 21px;
             }
-        }
 
-        @media (min-width: 1200px) {
             .wps-colBox-title-lg {
                 font-size: 24px;
+            }
+
+            & {
+                margin-top: 20px;
             }
         }
     }

@@ -1,8 +1,9 @@
 .wps-full-wrapper {
-    .wps-accordion {
-        background-color: #eee;
+    .wps-accordion:not(.wps-nav-accor) {
+        background-color: #cfcfcf;
         color: #444;
         cursor: pointer;
+        padding: 18px;
         width: 100%;
         border: none;
         text-align: left;
@@ -10,8 +11,25 @@
         font-size: 15px;
         transition: 0.4s;
 
+        &::after {
+            content: '\002B';
+            color: #777;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        @media (min-width: 768px) {
+            &.wps-accordion-btn { display: none;}
+        }
+
         @media (min-width: 992px) {
             cursor: default;
+            display: none;
+        }
+
+        &.active::after {
+            content: "\2212";
         }
     }
     
@@ -20,6 +38,12 @@
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.2s ease-out;
+
+        @media (min-width: 768px) {
+            &:not(.wps-nav-accor) {
+                max-height: none !important;
+            }
+        }
     
         @media (min-width: 992px) {
             max-height: none !important;
