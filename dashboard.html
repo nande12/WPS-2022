@@ -49,59 +49,507 @@
 
         <div class="wps-colums">
 
-            <div class="wps-accordion wps-column-box nft-dashboard">
-                <div class="wps-colBox-title-lg"><img src="./img/nfts-logo.svg">NFTS <span class="wps-mobile-direction">Click to open</span></div>
-                <div class="wps-colBox-top">
-                    <p>Gross sales</p>
-                    <!-- Each select should have an unique ID -->
-                    <select id="nft-currency" placeholder-text="USD">
-                        <option value="usd" class="select-dropdown__list-item">USD</option>
-                        <option value="col" class="select-dropdown__list-item">COL</option>
-                    </select>
+            <div class="wps-dash-column">
+                <!-- NFT column -->
+                <div class="wps-accordion wps-column-box nft-dashboard">
+                    <div class="wps-colBox-title-lg"><img src="./img/nfts-logo.svg">NFTS <span class="wps-mobile-direction">Click to open</span></div>
+                    <div class="wps-colBox-top">
+                        <p>Gross sales</p>
+                        <!-- Each select should have an unique ID -->
+                        <select id="nft-currency" placeholder-text="USD">
+                            <option value="usd" class="select-dropdown__list-item">USD</option>
+                            <option value="col" class="select-dropdown__list-item">COL</option>
+                        </select>
+                    </div>
+                    <div class="wps-colBox-price">
+                        <span class="wps-colBox-currency">$</span>
+                        <span class="wps-colBox-amount">23,845</span>
+                        <span class="wps-colBox-cents">60</span>
+                    </div>
+                    <div class="wps-colBox-bottomInfo">
+                        <div class="wps-period-detail wps-period-detail-green"><span class="icon"></span>+15% Period</div>
+                        <a href="#" class="wps-colBox-seeDetails">See details</a>
+                    </div>
                 </div>
-                <div class="wps-colBox-price">
-                    <span class="wps-colBox-currency">$</span>
-                    <span class="wps-colBox-amount">23,845</span>
-                    <span class="wps-colBox-cents">60</span>
-                </div>
-                <div class="wps-colBox-bottomInfo">
-                    <div class="wps-period-detail wps-period-detail-green"><span class="icon"></span>+15% Period</div>
-                    <a href="#" class="wps-colBox-seeDetails">See details</a>
-                </div>
-            </div>
-            <div class="wps-panel">
-                <div class="wps-column-box">
-                    <div class="wps-colBox-title-lg wps-colBox-title-inner">Smart Contracts</div>
+                <div class="wps-panel">
+                    <div class="wps-column-box wps-column-box-inner">
+                        <div class="wps-colBox-title-lg wps-colBox-title-inner">Smart Contracts</div>
 
-                    <div class="wps-smartContracts-table wps-table">
+                        <div class="wps-smartContracts-table wps-table">
 
-                        <div class="wps-table-row">
-                            <div class="wps-flag wps-bg-red">AVAX</div>
-                            <div class="wps-table-user"><img src="./img/placeholder-icon-sm.png"></div>
-                            <button class="wps-table-copy"><img src="./img/copy-solid-icon.svg"></button>
-                            <a href="#">0x93f972…bCB173</a>
-                            <div class="wps-flag wps-bg-green">Matcha</div>
+                            <div class="wps-table-row">
+                                <div class="wps-flag wps-bg-red">AVAX</div>
+                                <div class="wps-table-user"><img src="./img/placeholder-icon-sm.png"></div>
+                                <button class="wps-table-copy"><img src="./img/copy-solid-icon.svg"></button>
+                                <a href="#">0x93f972…bCB173</a>
+                                <div class="wps-flag wps-bg-green">Matcha</div>
+                            </div>
+
+                            <div class="wps-table-row">
+                                <div class="wps-flag wps-bg-yellow">BSC</div>
+                                <div class="wps-table-user"><img src="./img/placeholder-icon-sm.png"></div>
+                                <button class="wps-table-copy"><img src="./img/copy-solid-icon.svg"></button>
+                                <a href="#">0x93f972…bCB173</a>
+                                <div class="wps-flag wps-bg-purple">Mochi</div>
+                            </div>
+
+                            <div class="wps-table-row">
+                                <div class="wps-flag wps-bg-green">ETHER</div>
+                                <div class="wps-table-user"><img src="./img/placeholder-icon-sm.png"></div>
+                                <button class="wps-table-copy"><img src="./img/copy-solid-icon.svg"></button>
+                                <a href="#">0x93f972…bCB173</a>
+                                <div class="wps-flag wps-bg-brown">Azuki</div>
+                            </div>
+
                         </div>
 
-                        <div class="wps-table-row">
-                            <div class="wps-flag wps-bg-yellow">BSC</div>
-                            <div class="wps-table-user"><img src="./img/placeholder-icon-sm.png"></div>
-                            <button class="wps-table-copy"><img src="./img/copy-solid-icon.svg"></button>
-                            <a href="#">0x93f972…bCB173</a>
-                            <div class="wps-flag wps-bg-purple">Mochi</div>
-                        </div>
-
-                        <div class="wps-table-row">
-                            <div class="wps-flag wps-bg-green">ETHER</div>
-                            <div class="wps-table-user"><img src="./img/placeholder-icon-sm.png"></div>
-                            <button class="wps-table-copy"><img src="./img/copy-solid-icon.svg"></button>
-                            <a href="#">0x93f972…bCB173</a>
-                            <div class="wps-flag wps-bg-brown">Azuki</div>
-                        </div>
-
+                        <div class="wps-colBox-cta"><a href="#" class="wps-colBox-seeAll">See all</a></div>
                     </div>
 
-                    <div class="wps-colBox-cta"><a href="#" class="wps-colBox-seeAll">See all</a></div>
+                    <div class="wps-column-box wps-column-box-inner">
+                        <div class="wps-colBox-title-lg wps-colBox-title-inner">
+                            NFT items
+                            <!-- Each select should have an unique ID -->
+                            <select id="nft-itmes" placeholder-text="NFT items">
+                                <option value="nft-opt1" class="select-dropdown__list-item">NFT items</option>
+                                <option value="nft-opt1" class="select-dropdown__list-item">NFT items test</option>
+                            </select>
+                        </div>
+
+                        <div class="wps-table-container">
+                            <table class="wps-real-table">
+                                <tr>
+                                <th>Collection</th>
+                                <th>Items</th>
+                                </tr>
+                                <tr>
+                                <td>My collection</td>
+                                <td>15</td>
+                                </tr>
+                                <tr>
+                                    <td>Punks</td>
+                                    <td>32</td>
+                                </tr>
+                                <tr>
+                                    <td>Bored martian</td>
+                                    <td>50</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="wps-column-box wps-column-box-inner">
+                        <div class="wps-colBox-title-lg wps-colBox-title-inner">Latest activity</div>
+
+                        <div class="wps-smartContracts-table wps-table">
+
+                            <div class="wps-table-row">
+                                <div class="wps-table-user"><img src="./img/placeholder-icon-sm.png"></div>
+                                <button class="wps-table-copy"><img src="./img/copy-solid-icon.svg"></button>
+                                <a href="#">0x93f972…bCB173</a>
+                                <button class="wps-table-qr"><img src="./img/qrcode-solid.svg"></button>
+                                <p class="wps-row-text">Mint 4 items</p>
+                            </div>
+
+                            <div class="wps-table-row">
+                                <div class="wps-table-user"><img src="./img/placeholder-icon-sm.png"></div>
+                                <button class="wps-table-copy"><img src="./img/copy-solid-icon.svg"></button>
+                                <a href="#">0x93f972…bCB173</a>
+                                <button class="wps-table-qr"><img src="./img/qrcode-solid.svg"></button>
+                                <p class="wps-row-text">Mint 4 items</p>
+                            </div>
+
+                            <div class="wps-table-row">
+                                <div class="wps-table-user"><img src="./img/placeholder-icon-sm.png"></div>
+                                <button class="wps-table-copy"><img src="./img/copy-solid-icon.svg"></button>
+                                <a href="#">0x93f972…bCB173</a>
+                                <button class="wps-table-qr"><img src="./img/qrcode-solid.svg"></button>
+                                <p class="wps-row-text">Mint 4 items</p>
+                            </div>
+
+                        </div>
+
+                        <div class="wps-colBox-cta"><a href="#" class="wps-colBox-seeAll">See all</a></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="wps-dash-column">
+                <!-- STAKINGS column -->
+                <div class="wps-accordion wps-column-box stakings-dashboard">
+                    <div class="wps-colBox-title-lg"><img src="./img/stakings-logo.svg">STAKINGS <span class="wps-mobile-direction">Click to open</span></div>
+                    <div class="wps-colBox-top">
+                        <p>Gross sales</p>
+                        <!-- Each select should have an unique ID -->
+                        <select id="stakings-currency" placeholder-text="USD">
+                            <option value="usd" class="select-dropdown__list-item">USD</option>
+                            <option value="col" class="select-dropdown__list-item">COL</option>
+                        </select>
+                    </div>
+                    <div class="wps-colBox-price">
+                        <span class="wps-colBox-currency">$</span>
+                        <span class="wps-colBox-amount">23,845</span>
+                        <span class="wps-colBox-cents">60</span>
+                    </div>
+                    <div class="wps-colBox-bottomInfo">
+                        <div class="wps-period-detail wps-period-detail-green"><span class="icon"></span>+15% Period</div>
+                        <a href="#" class="wps-colBox-seeDetails">See details</a>
+                    </div>
+                </div>
+                <div class="wps-panel">
+                    <div class="wps-column-box wps-column-box-inner">
+                        <div class="wps-colBox-title-lg wps-colBox-title-inner">Smart Contracts</div>
+
+                        <div class="wps-smartContracts-table wps-table">
+
+                            <div class="wps-table-row">
+                                <div class="wps-flag wps-bg-red">AVAX</div>
+                                <div class="wps-table-user"><img src="./img/placeholder-icon-sm.png"></div>
+                                <button class="wps-table-copy"><img src="./img/copy-solid-icon.svg"></button>
+                                <a href="#">0x93f972…bCB173</a>
+                                <div class="wps-flag wps-bg-green">Matcha</div>
+                            </div>
+
+                            <div class="wps-table-row">
+                                <div class="wps-flag wps-bg-yellow">BSC</div>
+                                <div class="wps-table-user"><img src="./img/placeholder-icon-sm.png"></div>
+                                <button class="wps-table-copy"><img src="./img/copy-solid-icon.svg"></button>
+                                <a href="#">0x93f972…bCB173</a>
+                                <div class="wps-flag wps-bg-purple">Mochi</div>
+                            </div>
+
+                            <div class="wps-table-row">
+                                <div class="wps-flag wps-bg-green">ETHER</div>
+                                <div class="wps-table-user"><img src="./img/placeholder-icon-sm.png"></div>
+                                <button class="wps-table-copy"><img src="./img/copy-solid-icon.svg"></button>
+                                <a href="#">0x93f972…bCB173</a>
+                                <div class="wps-flag wps-bg-brown">Azuki</div>
+                            </div>
+
+                        </div>
+
+                        <div class="wps-colBox-cta"><a href="#" class="wps-colBox-seeAll">See all</a></div>
+                    </div>
+
+                    <div class="wps-column-box wps-column-box-inner">
+                        <div class="wps-colBox-title-lg wps-colBox-title-inner">
+                            NFT items
+                            <!-- Each select should have an unique ID -->
+                            <select id="stakings-nft-items" placeholder-text="NFT items">
+                                <option value="nft-opt1" class="select-dropdown__list-item">NFT items</option>
+                                <option value="nft-opt1" class="select-dropdown__list-item">NFT items test</option>
+                            </select>
+                        </div>
+
+                        <div class="wps-table-container">
+                            <table class="wps-real-table">
+                                <tr>
+                                <th>Collection</th>
+                                <th>Items</th>
+                                </tr>
+                                <tr>
+                                <td>My collection</td>
+                                <td>15</td>
+                                </tr>
+                                <tr>
+                                    <td>Punks</td>
+                                    <td>32</td>
+                                </tr>
+                                <tr>
+                                    <td>Bored martian</td>
+                                    <td>50</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="wps-column-box wps-column-box-inner">
+                        <div class="wps-colBox-title-lg wps-colBox-title-inner">Latest activity</div>
+
+                        <div class="wps-smartContracts-table wps-table">
+
+                            <div class="wps-table-row">
+                                <div class="wps-table-user"><img src="./img/placeholder-icon-sm.png"></div>
+                                <button class="wps-table-copy"><img src="./img/copy-solid-icon.svg"></button>
+                                <a href="#">0x93f972…bCB173</a>
+                                <button class="wps-table-qr"><img src="./img/qrcode-solid.svg"></button>
+                                <p class="wps-row-text">Mint 4 items</p>
+                            </div>
+
+                            <div class="wps-table-row">
+                                <div class="wps-table-user"><img src="./img/placeholder-icon-sm.png"></div>
+                                <button class="wps-table-copy"><img src="./img/copy-solid-icon.svg"></button>
+                                <a href="#">0x93f972…bCB173</a>
+                                <button class="wps-table-qr"><img src="./img/qrcode-solid.svg"></button>
+                                <p class="wps-row-text">Mint 4 items</p>
+                            </div>
+
+                            <div class="wps-table-row">
+                                <div class="wps-table-user"><img src="./img/placeholder-icon-sm.png"></div>
+                                <button class="wps-table-copy"><img src="./img/copy-solid-icon.svg"></button>
+                                <a href="#">0x93f972…bCB173</a>
+                                <button class="wps-table-qr"><img src="./img/qrcode-solid.svg"></button>
+                                <p class="wps-row-text">Mint 4 items</p>
+                            </div>
+
+                        </div>
+
+                        <div class="wps-colBox-cta"><a href="#" class="wps-colBox-seeAll">See all</a></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="wps-dash-column">
+                <!-- CROWFUNDINGS column -->
+                <div class="wps-accordion wps-column-box crowdfundings-dashboard">
+                    <div class="wps-colBox-title-lg"><img src="./img/crowfundings-logo.svg">CROWFUNDINGS <span class="wps-mobile-direction">Click to open</span></div>
+                    <div class="wps-colBox-top">
+                        <p>Gross sales</p>
+                        <!-- Each select should have an unique ID -->
+                        <select id="crowdfundings-currency" placeholder-text="USD">
+                            <option value="usd" class="select-dropdown__list-item">USD</option>
+                            <option value="col" class="select-dropdown__list-item">COL</option>
+                        </select>
+                    </div>
+                    <div class="wps-colBox-price">
+                        <span class="wps-colBox-currency">$</span>
+                        <span class="wps-colBox-amount">23,845</span>
+                        <span class="wps-colBox-cents">60</span>
+                    </div>
+                    <div class="wps-colBox-bottomInfo">
+                        <div class="wps-period-detail wps-period-detail-green"><span class="icon"></span>+15% Period</div>
+                        <a href="#" class="wps-colBox-seeDetails">See details</a>
+                    </div>
+                </div>
+                <div class="wps-panel">
+                    <div class="wps-column-box wps-column-box-inner">
+                        <div class="wps-colBox-title-lg wps-colBox-title-inner">Smart Contracts</div>
+
+                        <div class="wps-smartContracts-table wps-table">
+
+                            <div class="wps-table-row">
+                                <div class="wps-flag wps-bg-red">AVAX</div>
+                                <div class="wps-table-user"><img src="./img/placeholder-icon-sm.png"></div>
+                                <button class="wps-table-copy"><img src="./img/copy-solid-icon.svg"></button>
+                                <a href="#">0x93f972…bCB173</a>
+                                <div class="wps-flag wps-bg-green">Matcha</div>
+                            </div>
+
+                            <div class="wps-table-row">
+                                <div class="wps-flag wps-bg-yellow">BSC</div>
+                                <div class="wps-table-user"><img src="./img/placeholder-icon-sm.png"></div>
+                                <button class="wps-table-copy"><img src="./img/copy-solid-icon.svg"></button>
+                                <a href="#">0x93f972…bCB173</a>
+                                <div class="wps-flag wps-bg-purple">Mochi</div>
+                            </div>
+
+                            <div class="wps-table-row">
+                                <div class="wps-flag wps-bg-green">ETHER</div>
+                                <div class="wps-table-user"><img src="./img/placeholder-icon-sm.png"></div>
+                                <button class="wps-table-copy"><img src="./img/copy-solid-icon.svg"></button>
+                                <a href="#">0x93f972…bCB173</a>
+                                <div class="wps-flag wps-bg-brown">Azuki</div>
+                            </div>
+
+                        </div>
+
+                        <div class="wps-colBox-cta"><a href="#" class="wps-colBox-seeAll">See all</a></div>
+                    </div>
+
+                    <div class="wps-column-box wps-column-box-inner">
+                        <div class="wps-colBox-title-lg wps-colBox-title-inner">
+                            NFT items
+                            <!-- Each select should have an unique ID -->
+                            <select id="crowfundings-nft-itmes" placeholder-text="NFT items">
+                                <option value="nft-opt1" class="select-dropdown__list-item">NFT items</option>
+                                <option value="nft-opt1" class="select-dropdown__list-item">NFT items test</option>
+                            </select>
+                        </div>
+
+                        <div class="wps-table-container">
+                            <table class="wps-real-table">
+                                <tr>
+                                <th>Collection</th>
+                                <th>Items</th>
+                                </tr>
+                                <tr>
+                                <td>My collection</td>
+                                <td>15</td>
+                                </tr>
+                                <tr>
+                                    <td>Punks</td>
+                                    <td>32</td>
+                                </tr>
+                                <tr>
+                                    <td>Bored martian</td>
+                                    <td>50</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="wps-column-box wps-column-box-inner">
+                        <div class="wps-colBox-title-lg wps-colBox-title-inner">Latest activity</div>
+
+                        <div class="wps-smartContracts-table wps-table">
+
+                            <div class="wps-table-row">
+                                <div class="wps-table-user"><img src="./img/placeholder-icon-sm.png"></div>
+                                <button class="wps-table-copy"><img src="./img/copy-solid-icon.svg"></button>
+                                <a href="#">0x93f972…bCB173</a>
+                                <button class="wps-table-qr"><img src="./img/qrcode-solid.svg"></button>
+                                <p class="wps-row-text">Mint 4 items</p>
+                            </div>
+
+                            <div class="wps-table-row">
+                                <div class="wps-table-user"><img src="./img/placeholder-icon-sm.png"></div>
+                                <button class="wps-table-copy"><img src="./img/copy-solid-icon.svg"></button>
+                                <a href="#">0x93f972…bCB173</a>
+                                <button class="wps-table-qr"><img src="./img/qrcode-solid.svg"></button>
+                                <p class="wps-row-text">Mint 4 items</p>
+                            </div>
+
+                            <div class="wps-table-row">
+                                <div class="wps-table-user"><img src="./img/placeholder-icon-sm.png"></div>
+                                <button class="wps-table-copy"><img src="./img/copy-solid-icon.svg"></button>
+                                <a href="#">0x93f972…bCB173</a>
+                                <button class="wps-table-qr"><img src="./img/qrcode-solid.svg"></button>
+                                <p class="wps-row-text">Mint 4 items</p>
+                            </div>
+
+                        </div>
+
+                        <div class="wps-colBox-cta"><a href="#" class="wps-colBox-seeAll">See all</a></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="wps-dash-column">
+                <!-- TOKENS column -->
+                <div class="wps-accordion wps-column-box tokens-dashboard">
+                    <div class="wps-colBox-title-lg"><img src="./img/tokens-logo.svg">TOKENS <span class="wps-mobile-direction">Click to open</span></div>
+                    <div class="wps-colBox-top">
+                        <p>Gross sales</p>
+                        <!-- Each select should have an unique ID -->
+                        <select id="tokens-currency" placeholder-text="USD">
+                            <option value="usd" class="select-dropdown__list-item">USD</option>
+                            <option value="col" class="select-dropdown__list-item">COL</option>
+                        </select>
+                    </div>
+                    <div class="wps-colBox-price">
+                        <span class="wps-colBox-currency">$</span>
+                        <span class="wps-colBox-amount">23,845</span>
+                        <span class="wps-colBox-cents">60</span>
+                    </div>
+                    <div class="wps-colBox-bottomInfo">
+                        <div class="wps-period-detail wps-period-detail-green"><span class="icon"></span>+15% Period</div>
+                        <a href="#" class="wps-colBox-seeDetails">See details</a>
+                    </div>
+                </div>
+                <div class="wps-panel">
+                    <div class="wps-column-box wps-column-box-inner">
+                        <div class="wps-colBox-title-lg wps-colBox-title-inner">Smart Contracts</div>
+
+                        <div class="wps-smartContracts-table wps-table">
+
+                            <div class="wps-table-row">
+                                <div class="wps-flag wps-bg-red">AVAX</div>
+                                <div class="wps-table-user"><img src="./img/placeholder-icon-sm.png"></div>
+                                <button class="wps-table-copy"><img src="./img/copy-solid-icon.svg"></button>
+                                <a href="#">0x93f972…bCB173</a>
+                                <div class="wps-flag wps-bg-green">Matcha</div>
+                            </div>
+
+                            <div class="wps-table-row">
+                                <div class="wps-flag wps-bg-yellow">BSC</div>
+                                <div class="wps-table-user"><img src="./img/placeholder-icon-sm.png"></div>
+                                <button class="wps-table-copy"><img src="./img/copy-solid-icon.svg"></button>
+                                <a href="#">0x93f972…bCB173</a>
+                                <div class="wps-flag wps-bg-purple">Mochi</div>
+                            </div>
+
+                            <div class="wps-table-row">
+                                <div class="wps-flag wps-bg-green">ETHER</div>
+                                <div class="wps-table-user"><img src="./img/placeholder-icon-sm.png"></div>
+                                <button class="wps-table-copy"><img src="./img/copy-solid-icon.svg"></button>
+                                <a href="#">0x93f972…bCB173</a>
+                                <div class="wps-flag wps-bg-brown">Azuki</div>
+                            </div>
+
+                        </div>
+
+                        <div class="wps-colBox-cta"><a href="#" class="wps-colBox-seeAll">See all</a></div>
+                    </div>
+
+                    <div class="wps-column-box wps-column-box-inner">
+                        <div class="wps-colBox-title-lg wps-colBox-title-inner">
+                            NFT items
+                            <!-- Each select should have an unique ID -->
+                            <select id="tokens-nft-itmes" placeholder-text="NFT items">
+                                <option value="nft-opt1" class="select-dropdown__list-item">NFT items</option>
+                                <option value="nft-opt1" class="select-dropdown__list-item">NFT items test</option>
+                            </select>
+                        </div>
+
+                        <div class="wps-table-container">
+                            <table class="wps-real-table">
+                                <tr>
+                                <th>Collection</th>
+                                <th>Items</th>
+                                </tr>
+                                <tr>
+                                <td>My collection</td>
+                                <td>15</td>
+                                </tr>
+                                <tr>
+                                    <td>Punks</td>
+                                    <td>32</td>
+                                </tr>
+                                <tr>
+                                    <td>Bored martian</td>
+                                    <td>50</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="wps-column-box wps-column-box-inner">
+                        <div class="wps-colBox-title-lg wps-colBox-title-inner">Latest activity</div>
+
+                        <div class="wps-smartContracts-table wps-table">
+
+                            <div class="wps-table-row">
+                                <div class="wps-table-user"><img src="./img/placeholder-icon-sm.png"></div>
+                                <button class="wps-table-copy"><img src="./img/copy-solid-icon.svg"></button>
+                                <a href="#">0x93f972…bCB173</a>
+                                <button class="wps-table-qr"><img src="./img/qrcode-solid.svg"></button>
+                                <p class="wps-row-text">Mint 4 items</p>
+                            </div>
+
+                            <div class="wps-table-row">
+                                <div class="wps-table-user"><img src="./img/placeholder-icon-sm.png"></div>
+                                <button class="wps-table-copy"><img src="./img/copy-solid-icon.svg"></button>
+                                <a href="#">0x93f972…bCB173</a>
+                                <button class="wps-table-qr"><img src="./img/qrcode-solid.svg"></button>
+                                <p class="wps-row-text">Mint 4 items</p>
+                            </div>
+
+                            <div class="wps-table-row">
+                                <div class="wps-table-user"><img src="./img/placeholder-icon-sm.png"></div>
+                                <button class="wps-table-copy"><img src="./img/copy-solid-icon.svg"></button>
+                                <a href="#">0x93f972…bCB173</a>
+                                <button class="wps-table-qr"><img src="./img/qrcode-solid.svg"></button>
+                                <p class="wps-row-text">Mint 4 items</p>
+                            </div>
+
+                        </div>
+
+                        <div class="wps-colBox-cta"><a href="#" class="wps-colBox-seeAll">See all</a></div>
+                    </div>
+
                 </div>
             </div>
 

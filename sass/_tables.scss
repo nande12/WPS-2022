@@ -30,12 +30,20 @@
             color: #ffffff;
         }
 
-        .wps-table-copy {
+        .wps-table-copy,
+        .wps-table-qr {
             background-color: transparent;
             padding: 0 4px;
             margin: 0;
             border: none;
             cursor: pointer;
+        }
+
+        .wps-row-text {
+            font-size: 14px;
+            color: #000000;
+            font-weight: 400;
+            margin: 0;
         }
 
         .wps-bg-red{
@@ -56,6 +64,35 @@
 
         .wps-bg-brown{
             background: #83450E;
+        }
+    }
+
+    .wps-table-container {
+        padding: 20px 15px 40px;
+    }
+
+    .wps-real-table {
+        width: 100%;
+        border: none;
+
+        th {
+            text-align: left;
+            background: #e3e4e6;
+            height: 40px;
+            opacity: 0.5;
+            font-size: 12px;
+            color: #54617A;
+            font-weight: 400;
+            text-transform: uppercase;
+            padding-left: 8px;
+        }
+
+        td {
+            font-size: 14px;
+            color: #54617A;
+            font-weight: 400;
+            padding: 18px 8px;
+            border-bottom: solid 1px #EFF3F9;
         }
     }
 }

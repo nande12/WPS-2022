@@ -4,14 +4,34 @@
     .wps-dashboard-grid {
         padding: 20px;
 
+        .wps-dash-column {
+            margin-bottom: 20px;
+        }
+
         .wps-column-box {
             box-shadow: 0 0 20px 0 rgba(215,222,227,0.56);
             border-radius: 8px;
             background-color: #ffffff;
+
+            &.wps-column-box-inner {
+                margin-bottom: 20px;
+            }
         }
     
         .nft-dashboard {
             background: #FF017B;
+        }
+
+        .stakings-dashboard {
+            background: #7A5BB1;
+        }
+
+        .crowdfundings-dashboard {
+            background: #02AFE1;
+        }
+
+        .tokens-dashboard {
+            background: #00C7C3;
         }
     
         .wps-colBox-title-lg {
@@ -36,6 +56,11 @@
                 font-size: 16px;
                 font-weight: 600;
                 color: #242E42;
+                justify-content: space-between;
+
+                .select-dropdown__button {
+                    width: 160px;
+                }
             }
         }
     
@@ -164,10 +189,30 @@
         .wps-panel {
             padding-top: 20px;
         }
+
+        @media (min-width: 768px) {
+            .wps-colums {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .wps-dash-column {
+                    width: 48%;
+                }
+            }
+        }
     
         @media (min-width: 992px) {
             .wps-mobile-direction {
                 display: none;
+            }
+
+            .wps-colums {
+                flex-wrap: nowrap;
+
+                .wps-dash-column {
+                    width: 24%;
+                }
             }
         }
     }
