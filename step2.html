@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>STEP2</title>
+</head>
+<body class="wps-full-wrapper light-theme">
+
+    <!-- MAIN WRAPPER -->
+    <div class="wps-main-wrapper">
+        <!-- WPS SIDEBAR -->
+        <div class="wps-sidebar wps-sidebar-nav">
+            <div class="wps-sidebar-logo">
+                <img src="./img/wp-smart-contracts-logo.png">
+            </div>
+            <ul class="wps-main-list">
+                <li class="wps-heading-link">
+                    <a href="#" class="wps-nav-main-link">NFT</a>
+                </li>
+                <li class="wps-heading-link wps-active-heading">
+                    <a href="#" class="wps-nav-main-link">Create a Collection</a>
+                    <ul class="wps-inside-list">
+                        <li><a href="#" class="wps-inside-link">Manage Smart Contracts</a></li>
+                        <li><a href="#" class="wps-inside-link">NFT Items</a></li>
+                        <li><a href="#" class="wps-inside-link">Batch & Lazy Minting</a></li>
+                    </ul>
+                </li>
+                <li class="wps-heading-link ">
+                    <a href="#" class="wps-nav-main-link">Staking</a>
+                    <ul class="wps-inside-list">
+                        <li><a href="#" class="wps-inside-link">Create a staking</a></li>
+                        <li><a href="#" class="wps-inside-link">Manage Smart Contracts</a></li>
+                    </ul>
+                </li>
+                <li class="wps-heading-link ">
+                    <a href="#" class="wps-nav-main-link">Crowdfunding</a>
+                    <ul class="wps-inside-list">
+                        <li><a href="#" class="wps-inside-link">Create a Crowdfunding</a></li>
+                        <li><a href="#" class="wps-inside-link">Manage Smart Contracts</a></li>
+                    </ul>
+                </li>
+                <li class="wps-heading-link ">
+                    <a href="#" class="wps-nav-main-link">Tokens</a>
+                    <ul class="wps-inside-list">
+                        <li><a href="#" class="wps-inside-link">Create a Token</a></li>
+                        <li><a href="#" class="wps-inside-link">Manage Smart Contracts</a></li>
+                    </ul>
+                </li>
+                <li class="wps-heading-link ">
+                    <a href="#" class="wps-nav-main-link">Settings</a>
+                    <ul class="wps-inside-list">
+                        <li><a href="#" class="wps-inside-link">Control Panel</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- WPS CONTENT -->
+        <div class="wps-content-page">
+            <!-- MAIN NAV -->
+            <nav class="wps-main-nav">
+                <div class="left">
+                    <div class="wps-logo wps-mobile"><img src="./img/wp-smart-contracts-logo-figure-black.png"></div>
+                    <ul class="wps-breadcrumb">
+                        <li><a href="#">Dashboard</a></li>
+                    </ul>
+                </div>  
+                <div class="right">
+                    <div class="wps-dropdown-section">
+                        <!-- Each select should have an unique ID -->
+                        <select id="normal-select-1" placeholder-text="Last 7 days">
+                            <option value="opt1" class="select-dropdown__list-item">Last 7 days</option>
+                            <option value="opt2" class="select-dropdown__list-item">Last 5 days</option>
+                            <option value="opt3" class="select-dropdown__list-item">Last 3 days</option>
+                        </select>
+
+                        <div class="wps-user"><span class="wps-user-icon"></span>0x123…890</div>
+                    </div>
+                    <div class="wps-settings">
+                        <div class="wps-theme" id="wps-theme">
+                            <span class="wps-theme-icon"></span>
+                            <span class="wps-theme-text light-text">Dark theme</span>
+                            <span class="wps-theme-text dark-text">Light theme</span>
+                        </div>
+                        <div class="wps-login-info"><a href="javascript:void(0);">Logout</a></div>
+                    </div>
+
+                </div>      
+            </nav>
+
+            <!-- SECONDARY NAV MOBILE -->
+            <div class="wps-mobile-secondarynav wps-sidebar-nav">
+                <div class="wps-secondary-nav-button wps-accordion wps-nav-accor">Open Nav +</div>
+                <ul class="wps-main-list wps-panel wps-nav-accor">
+                    <li class="wps-heading-link">
+                        <a href="#" class="wps-nav-main-link">NFT</a>
+                    </li>
+                    <li class="wps-heading-link wps-active-heading">
+                        <a href="#" class="wps-nav-main-link">Create a Collection</a>
+                        <ul class="wps-inside-list">
+                            <li><a href="#" class="wps-inside-link">Manage Smart Contracts</a></li>
+                            <li><a href="#" class="wps-inside-link">NFT Items</a></li>
+                            <li><a href="#" class="wps-inside-link">Batch & Lazy Minting</a></li>
+                        </ul>
+                    </li>
+                    <li class="wps-heading-link wps-active-heading">
+                        <a href="#" class="wps-nav-main-link">Staking</a>
+                        <ul class="wps-inside-list">
+                            <li><a href="#" class="wps-inside-link">Create a staking</a></li>
+                            <li><a href="#" class="wps-inside-link">Manage Smart Contracts</a></li>
+                        </ul>
+                    </li>
+                    <li class="wps-heading-link wps-active-heading">
+                        <a href="#" class="wps-nav-main-link">Crowdfunding</a>
+                        <ul class="wps-inside-list">
+                            <li><a href="#" class="wps-inside-link">Create a Crowdfunding</a></li>
+                            <li><a href="#" class="wps-inside-link">Manage Smart Contracts</a></li>
+                        </ul>
+                    </li>
+                    <li class="wps-heading-link wps-active-heading">
+                        <a href="#" class="wps-nav-main-link">Tokens</a>
+                        <ul class="wps-inside-list">
+                            <li><a href="#" class="wps-inside-link">Create a Token</a></li>
+                            <li><a href="#" class="wps-inside-link">Manage Smart Contracts</a></li>
+                        </ul>
+                    </li>
+                    <li class="wps-heading-link wps-active-heading">
+                        <a href="#" class="wps-nav-main-link">Settings</a>
+                        <ul class="wps-inside-list">
+                            <li><a href="#" class="wps-inside-link">Control Panel</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- WSP GRID -->
+            <div class="wps-inner-content">
+
+                <div class="wps-description-box">
+                    <h2 class="wps-box-heading">Create your NFT collection in three easy steps</h2>
+                    <p class="wps-box-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales, libero eget venenatis lacinia,
+                        purus enim eleifend neque, id malesuada sem leo nec metus.</p>
+                </div>
+
+                <!-- STEPS -->
+                <div class="wps-steps-container">
+                    <div class="wps-step-nav">
+
+                        <div class="wps-step-nav-col wps-step-nav-one wps-step-nav-updated">
+                            <div class="wps-step-icon">1</div>
+                            <h2 class="wps-step-heading">How? <span class="wps-step-edit"><img src="./img/edit-icon.svg"></span></h2>
+                            <p class="wps-step-desc">Ikasumi: ERC-1155 <br> NFT Token Marketcplace</p>
+                        </div>
+
+                        <div class="wps-step-nav-col wps-step-nav-two wps-step-nav-active">
+                            <div class="wps-step-icon">2</div>
+                            <h2 class="wps-step-heading">Deploy? <span class="wps-step-edit"><img src="./img/edit-icon.svg"></span></h2>
+                            <p class="wps-step-desc">Choose a Network</p>
+                        </div>
+
+                        <div class="wps-step-nav-col wps-step-nav-three">
+                            <div class="wps-step-icon">3</div>
+                            <h2 class="wps-step-heading">Where? <span class="wps-step-edit"><img src="./img/edit-icon.svg"></span></h2>
+                            <p class="wps-step-desc">Finish a Deploy</p>
+                        </div>
+
+                    </div>
+
+                    <div class="wps-step-content wps-step-one">Content here</div>
+
+                    <div class="wps-step-content wps-step-two wps-step-content-active">
+                        <p class="wps-step-text">The contract you choose is available on the following Networks:</p>
+                        <div class="wps-filters-box">
+                            <div class="wps-filter wps-filters-col">
+                                <h2>Filter by</h2>
+                                <div class="wps-filter-column">
+                                    <div class="switch-group">
+                                        <label class="switch">
+                                            <input type="checkbox" class="theToggle">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <div class="switch-label">Mainnets</div>
+                                    </div>
+                                    <div class="switch-group">
+                                        <label class="switch">
+                                            <input type="checkbox" class="theToggle">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <div class="switch-label">Testnets</div>
+                                    </div>
+                                </div>
+                                <div class="wps-filter-column">
+                                    <div class="switch-group">
+                                        <label class="switch">
+                                            <input type="checkbox" class="theToggle">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <div class="switch-label">Ethereum</div>
+                                    </div>
+                                    <div class="switch-group">
+                                        <label class="switch">
+                                            <input type="checkbox" class="theToggle">
+                                            <span class="slider round"></span>
+                                        </label>
+                                        <div class="switch-label">Others</div>
+                                    </div>
+                                </div>
+                                <div class="wps-filter-result">3 Networks found</div>
+                            </div>
+                            <div class="wps-dior wps-filters-col">
+                                <h2>DYOR</h2>
+                                <p>We recommend that you Do Your Own Research, some networks shown here are in the early stages. Use them at your own discretion and risk.</p>
+                            </div>
+                        </div>
+
+                        <div class="wps-boxes">
+                            <div class="wps-box">
+                                aaaaaaaa
+                            </div>
+
+                            <div class="wps-box">
+                                aaaaaaaa
+                            </div>
+
+                            <div class="wps-box">
+                                aaaaaaaa
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wps-step-content wps-step-three">smart contract options</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="wps-footer">
+        <div class="wps-footer-top">
+            <div class="wps-footer-col">
+                <h2 class="wps-footer-heading">Info</h2>
+                <ul>
+                    <li><a href="#">Item 1 Item 1 Item 1 Item 1 Item 1</a></li>
+                    <li><a href="#">Item 1 Item 1 Item 1</a></li>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 1 Item 1 Item 1 </a></li>
+                    <li><a href="#">Item 1</a></li>
+                </ul>
+            </div>
+            <div class="wps-footer-col">
+                <h2 class="wps-footer-heading">Info</h2>
+                <ul>
+                    <li><a href="#">Item 1 Item 1 Item 1 Item 1 Item 1</a></li>
+                    <li><a href="#">Item 1 Item 1 Item 1</a></li>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 1 Item 1 Item 1 </a></li>
+                    <li><a href="#">Item 1</a></li>
+                </ul>
+            </div>
+            <div class="wps-footer-col">
+                <h2 class="wps-footer-heading">Info</h2>
+                <ul>
+                    <li><a href="#">Item 1 Item 1 Item 1 Item 1 Item 1</a></li>
+                    <li><a href="#">Item 1 Item 1 Item 1</a></li>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 1 Item 1 Item 1 </a></li>
+                    <li><a href="#">Item 1</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="wps-footer-bottom">
+            <img src="./img/wp-smart-contracts-logo.png">
+            <p class="text-center wpsc-copyright">Copyright © 2018-2021, All Right Reserved</p>
+            <a href="https://wpsmartcontracts.com/mit-license">License</a> | <a href="https://wpsmartcontracts.com/terms">Terms of Service</a> | <a href="https://wpsmartcontracts.com/privacy-policy">Privacy Policy<br></a><a href="https://wpsmartcontracts.com/netiquette">Netiquette</a>
+            <div class="mt-3 wpsc-social">
+                <a target="_blank" href="https://wordpress.org/plugins/wp-smart-contracts/" class="me-1"><i class="fa fa-wordpress" aria-hidden="true"></i></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCT6H5dVJkhU2SyelYztfa5w/videos" class="me-1"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                <a target="_blank" href="https://twitter.com/wpsmartcontract" class="me-1"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a target="_blank" href="https://medium.com/@wpsmartcontracts" class="me-1"><i class="fa fa-medium" aria-hidden="true"></i></a>
+                <a target="_blank" href="https://bitcointalk.org/index.php?topic=5213032.0" class="me-1"><i class="fa fa-btc" aria-hidden="true"></i></a>
+                <a target="_blank" href="https://t.me/WPSCNews" class="me-1"><i class="fa fa-telegram" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="./js/dropdown.js"></script>
+    <script src="./js/wps-theme.js"></script>
+    <script src="./js/accordeon.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/charts.js"></script>
+    <script src="https://kit.fontawesome.com/e5ae307094.js" crossorigin="anonymous"></script>
+
+    
+    
+</body>
+</html>
