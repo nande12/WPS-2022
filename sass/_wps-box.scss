@@ -146,8 +146,46 @@
             }
         }
     }
+
+    //DARK THEME
+    &.dark-theme {
+
+        .wps-box {
+            background: #171C20;
+            border-radius: 8px;
+            border: none;
+            box-shadow: none;
+
+            .wps-box-tag {
+                background-color: #00C7C3;
+            }
+
+            .wps-box-title {
+                color: #ffffff;
+
+                .wps-box-title-icon {
+                    filter: brightness(0) invert(1);
+                }
+            }
+
+            .wps-box-text {
+                color: #ffffff;
+            }
+
+            .wps-box-ctas {
+
+                .wps-btn {
+                    border: solid 1px #FF3D9A;
+                    color: #ffffff;
+
+                    &.wps-btn-full {
+                        background-color: #FF3D9A;
+                        border: none;
+                    }
+                }
+
+            }
+        }
+
+    }
 }
-
-
-
-//THEME -     filter: brightness(0) invert(1);

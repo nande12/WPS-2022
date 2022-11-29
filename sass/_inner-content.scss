@@ -9,12 +9,15 @@
             }
         }
 
+        .wps-description-box-out-border {
+            margin-bottom: 80px;
+        }
+
         .wps-description-box {
             background-image: radial-gradient(circle at 1.7% 12%, #DAFFFE 0%, #4BE8E2 43%, #9AA8EC 87%, #F883B8 127%);
             box-shadow: 0 0 20px 0 rgba(129,129,130,0.40);
             border-radius: 8px;
             padding: 40px;
-            margin-bottom: 80px;
         }
 
         .wps-box-heading {
@@ -98,6 +101,7 @@
             display: flex;
             align-items: center;
             margin-bottom: 0;
+            text-transform: uppercase;
 
             @media (max-width: 767px) {
                 font-size: 20px;
@@ -261,5 +265,94 @@
             font-size: 16px;
             color: #ffffff;
         }
+
+        .help-box {
+            border: 1px solid #323842;
+            border-radius: 8px;
+            padding: 16px 23px;
+
+            .wps-help-title,
+            .wps-help-link {
+                margin: 0;
+                padding: 0;
+                color: #000000;
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            .wps-help-link {
+                color: #0099E5;
+                text-decoration: none;
+                font-weight: 400;
+            }
+        }
+    }
+
+    //DARK THEME
+    &.dark-theme {
+
+        .wps-inner-content {
+
+            .wps-description-box-out-border {
+                background-image: linear-gradient(91deg, #E70742 0%, #CA0E8A 31%, #735DD8 67%, #04DBF9 100%);
+                border-radius: 8px;
+                padding: 2px;
+            }
+
+            .wps-description-box {
+                background-image: linear-gradient(261deg, #172B2F 0%, #2E1415 100%);
+                border-radius: 8px;
+                box-shadow: none;
+            }
+
+            .wps-box-heading,
+            .wps-box-description {
+                color: #ffffff;
+            }
+
+            .wps-step-nav-active {
+
+                .wps-step-icon {
+                    background-color: #00C7C3;
+                    border: none;
+                    color: #ffffff;
+                }
+
+                .wps-step-heading {
+                    color: #00C7C3;
+                }
+            }
+
+            .wps-step-icon {
+                background-color: transparent;
+                border: solid 2px #ffffff;
+                color: #00C7C3;
+            }
+
+            .wps-step-desc {
+                color: #FF3D9A;
+            }
+
+            .wps-filters-col h2,
+            .wps-filter-result {
+                color: #00C7C3;
+            }
+
+            .wps-step-heading,
+            .wps-dior h2,
+            .wps-step-text  {
+                color: #ffffff;
+            }
+
+            .help-box {
+                border: solid 1px #ffffff;
+
+                .wps-help-title {
+                    color: #ffffff;
+                }
+            }
+
+        }
+
     }
 }
