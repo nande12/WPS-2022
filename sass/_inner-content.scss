@@ -115,9 +115,14 @@
         .wps-step-edit {
             display: none;
             margin-left: 10px;
-            width: 20px;
-            height: 20px;
+            width: 16px;
+            height: 16px;
             cursor: pointer;
+
+            @media (min-width: 768px) {
+                width: 20px;
+                height: 20px;
+            }
         }
 
         .wps-step-nav-active {
@@ -244,7 +249,11 @@
             margin-bottom: 16px;
 
             .switch {
-                margin-right: 18px;
+                margin-right: 10px;
+
+                @media (min-width: 768px) {
+                    margin-right: 18px;
+                }
             }
         }
 

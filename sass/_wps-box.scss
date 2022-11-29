@@ -1,0 +1,153 @@
+.wps-full-wrapper {
+
+    .wps-boxes {
+        margin-bottom: 40px;
+        @media (min-width: 768px) {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+    }
+
+    .wps-box {
+        margin-top: 65px;
+        background: #FFFFFF;
+        border: 1px solid #EEEEEE;
+        box-shadow: 0 0 20px 0 rgba(215,222,227,0.62);
+        border-radius: 8px;
+
+        @media (min-width: 768px) {
+            width: 244px;
+        }
+
+        @media (min-width: 1280px) {
+            width: 320px;
+        }
+
+        .wps-layer-tag {
+            background: #000000;
+            border-radius: 0 8px 0 8px;
+            width: 100px;
+            height: 33px;
+            color: #ffffff;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+        }
+
+        .wps-box-tag {
+            width: 119px;
+            height: 41px;
+            background-color: #FF017B;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0 0 8px 0;
+            margin-bottom: 28px;
+        }
+
+        .wps-box-title {
+            margin-left: 28px;
+            font-size: 32px;
+            color: #242E42;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+
+            .wps-box-title-icon {
+                background-image: url('../img/ethereum-black.svg');
+                width: 36px;
+                height: 36px;
+                margin-right: 10px;
+            }
+        }
+
+        .wps-box-text {
+            font-size: 20px;
+            font-weight: 400;
+            color: #242E42;
+            text-align: left;
+            padding-left: 28px;
+            padding-right: 28px;
+        }
+
+        .wps-box-content-inner {
+            padding-left: 28px;
+            padding-right: 28px;
+            margin-top: 20px;
+        }
+
+        .wps-fee-info {
+            display: flex;
+            margin-bottom: 20px;
+
+            p {
+                color: #38B900;
+                font-size: 14px;
+                font-weight: 400;
+                margin-right: 20px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                @media (min-width: 768px) {
+                    margin-right: 15px;
+                }
+
+                @media (min-width: 992px) {
+                    margin-right: 45px;
+                }
+            }
+        }
+
+        .wps-box-ctas {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 12px;
+
+            .wps-btn {
+                border: 1px solid #00C7C3;
+                border-radius: 18px;
+                height: 36px;
+                padding: 0 20px;
+                display: flex;
+                align-items: center;
+                margin: 0 6px;
+                font-size: 16px;
+                justify-content: center;
+                text-decoration: none;
+                color: #242e42;
+
+                @media (min-width: 768px) {
+                    font-size: 12px;
+                    padding: 0 10px;
+                }
+
+                @media (min-width: 992px) {
+                    font-size: 16px;
+                }
+
+                &.wps-btn-full {
+                    background-color: #00C7C3;
+                    color: #ffffff;
+                    width: 100%;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+
+//THEME -     filter: brightness(0) invert(1);
