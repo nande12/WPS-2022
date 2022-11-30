@@ -11,6 +11,25 @@
 
         .wps-description-box-out-border {
             margin-bottom: 80px;
+
+            &.wps-description-box-out-border-bottom {
+                margin-top: 20px;
+            }
+
+            .wps-cta {
+                background: #FF017B;
+                border-radius: 18px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 181px;
+                height: 40px;
+                color: #ffffff;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                margin-top: 20px;
+                text-decoration: none;
+            }
         }
 
         .wps-description-box {
@@ -154,6 +173,10 @@
             &.wps-step-content-active {
                 display: block;
             }
+
+            &.wps-step-content-lg {
+                max-width: 1150px;
+            }
         }
 
         .wps-step-text {
@@ -284,6 +307,77 @@
                 color: #0099E5;
                 text-decoration: none;
                 font-weight: 400;
+            }
+        }
+
+        .wps-deply-box {
+            padding: 0;
+            margin: 0 0 40px;
+
+            .wsp-top-badge {
+                background: #00FFA8;
+                border-radius: 8px 0 8px 0;
+                height: 33px;
+                max-width: 203px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 15px;
+                font-size: 14px;
+            }
+
+            .wps-deploy-box-content {
+                padding: 0 20px;
+                text-align: center;
+
+                @media (min-width: 768px) {
+                    padding: 0 35px;
+                }
+            }
+
+            .wps-deply-box-heading {
+                font-size: 20px;
+                color: #242E42;
+                font-weight: 400;
+                border-bottom: solid 1px #979797;
+                padding: 20px 0;
+            }
+
+            .wps-box-ctas {
+                flex-wrap: wrap;
+            }
+            .top-cta {
+                width: 100%;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+            .wps-rectangle {
+                width: 218px;
+                height: 36px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 9px;
+                color: #ffffff;
+
+                .wps-circle {
+                    background: #ffffff;
+                    border-radius: 50%;
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 10px;
+                }
+
+                &.wps-yellow {
+                    background-color: #FFAF00;
+                }
+            }
+
+            .wps-btn-full {
+                width: auto !important;
+                padding: 0 20px !important;
             }
         }
     }

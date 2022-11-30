@@ -19,6 +19,8 @@
 @import "inner-content";
 @import "switch";
 @import "wps-box";
+@import "custom-checkbox";
+@import "form";
 
 
 body {
@@ -42,4 +44,32 @@ body.dark-theme {
         flex-direction: row;
         justify-content: space-between;
     }
+}
+
+.wps-heading1 {
+    padding: 10px;
+    font-size: 32px;
+    color: #242E42;
+    font-weight: 600;
+}
+
+.wps-heading2 {
+    padding: 10px;
+    font-size: 24px;
+    color: #242E42;
+    font-weight: 600;
+}
+
+.wps-paragraph {
+    font-size: 20px;
+    color: #242E42;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.wps-divide-line {
+    width: 50%;
+    height: 1px;
+    background-color: #242E42;
+    margin-bottom: 40px;
 }
