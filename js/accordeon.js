@@ -8,21 +8,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
             if(!e.target.classList.contains('select-dropdown--1')) {
 
-                var everyAccordion = document.querySelectorAll('.wps-colums .wps-accordion');
-                var everyPanel = document.querySelectorAll('.wps-colums .wps-panel');
-
-                if (everyAccordion && everyPanel) {
-
-                    if (this.classList.contains('active')) {
-                        this.classList.toggle("active");
-                    }else {
-                        for (var index = 0; index < everyAccordion.length; index++) {
-                            everyAccordion[index].classList.remove('active');   
-                            everyPanel[index].style.maxHeight = null;                       
-                        }
-                    }
-                    
-                }
 
                 this.classList.toggle("active");
                 var wpsMobileDirection = this.querySelector('.wps-mobile-direction');

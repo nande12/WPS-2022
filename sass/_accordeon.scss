@@ -3,7 +3,7 @@
         background-color: #cfcfcf;
         color: #444;
         cursor: pointer;
-        padding: 18px;
+        padding: 0;
         width: 100%;
         border: none;
         text-align: left;
@@ -11,13 +11,13 @@
         font-size: 15px;
         transition: 0.4s;
 
-        &::after {
-            content: '\002B';
-            color: #777;
-            font-weight: bold;
-            float: right;
-            margin-left: 5px;
-        }
+        // &::after {
+        //     content: '\002B';
+        //     color: #777;
+        //     font-weight: bold;
+        //     float: right;
+        //     margin-left: 5px;
+        // }
 
         @media (min-width: 768px) {
             &.wps-accordion-btn { display: none;}
@@ -28,9 +28,9 @@
             display: none;
         }
 
-        &.active::after {
-            content: "\2212";
-        }
+        // &.active::after {
+        //     content: "\2212";
+        // }
     }
     
     .wps-panel {
