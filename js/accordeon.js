@@ -15,9 +15,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
                 if(wpsMobileDirection) {
                     if (this.classList.contains('active')) {
-                        wpsMobileDirection.textContent = 'Click to close';
+                        wpsMobileDirection.textContent = '[ - ]';
                     }else {
-                        wpsMobileDirection.textContent = 'Click to open';
+                        wpsMobileDirection.textContent = '[ + ]';
                     }
                 }
 

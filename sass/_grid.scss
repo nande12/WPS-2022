@@ -12,7 +12,7 @@
             box-shadow: 0 0 20px 0 rgba(215,222,227,0.56);
             border-radius: 8px;
             background-color: #ffffff;
-            margin-top: 20px;
+            margin-top: 30px;
 
             &.wps-column-box-inner {
                 margin-bottom: 20px;
@@ -235,7 +235,7 @@
             }
 
             & {
-                margin-top: 20px;
+                margin: 20px 10px auto;
             }
         }
     }
@@ -274,7 +274,8 @@
             }
     
             .tokens-dashboard {
-                background-image: linear-gradient(122deg, #00E5E3 0%, #43009C 100%);
+                background-image: linear-gradient(122deg,#00fffa 0,#0a302f 100%);
+                    
             }
 
             // .wps-colBox-price {
