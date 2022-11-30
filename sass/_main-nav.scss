@@ -6,6 +6,16 @@
         justify-content: space-between;
         height: 72px;
 
+        &.wps-main-nav-principal {
+            background-color: #192542;
+
+            .wps-breadcrumb a,
+            .wps-user,
+            .wps-theme .wps-theme-text {
+                color: #FFFFFF;
+            }
+        }
+
         .wps-logo {
             max-width: 52px;
             width: 52x;
