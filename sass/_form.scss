@@ -36,7 +36,7 @@
         }
 
         .wps-form-container {
-            padding: 28px 18px;
+            padding: 28px 18px 0;
 
             @media (min-width: 768px) {
                 display: flex;
@@ -54,6 +54,10 @@
 
         .wsp-form-group {
             margin-bottom: 40px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
 
         .wps-form-label {
@@ -224,7 +228,41 @@
     //DARK THEME
     &.dark-theme {
 
-        
+        .wps-form-box {
+            background-color: #171C20;
+            box-shadow: none;
+            border: none;
+
+            .wps-form-heading h2 {
+                background-color: #00C7C3;
+            }
+    
+            .wps-form-label,
+            .wps-form-text-tooltip,
+            .wsp-form-neddhelp-heading,
+            .wsp-form-neddhelp-text,
+            .wps-container-check {
+                color: #ffffff;
+            }
+    
+            .wps-form-tooltip-icon img,
+            .wsp-input-container img {
+                filter: brightness(0) invert(1);
+            }
+    
+            input[type=text] {
+                background: #000000;
+                border: 1px solid #C8C8C8;
+                color: #999DA5;
+                box-shadow: none;
+            }
+
+            .wsp-select-color,
+            .select-dropdown__button {
+                box-shadow: none;
+            }
+            
+        }
 
     }
 }
