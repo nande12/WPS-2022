@@ -47,14 +47,14 @@ body.dark-theme {
 }
 
 .wps-heading1 {
-    padding: 10px;
+    padding: 10px 0;
     font-size: 32px;
     color: #242E42;
     font-weight: 600;
 }
 
 .wps-heading2 {
-    padding: 10px;
+    padding: 10px 0;
     font-size: 24px;
     color: #242E42;
     font-weight: 600;
@@ -72,6 +72,52 @@ body.dark-theme {
     height: 1px;
     background-color: #242E42;
     margin-bottom: 40px;
+}
+
+//COLORS
+.wps-yellow {
+    background-color: #FFAF00;
+}
+
+.wps-mochi {
+    background-color: #9D477B;
+}
+
+.wps-matcha {
+    background-color: #3AA162;
+}
+
+.wps-suika {
+    background-color: #E52725;
+}
+
+.wps-yuzu {
+    background-color: #DEB73E;
+}
+
+.wps-azuki {
+    background-color: #905348;
+}
+
+.wps-ikasumi {
+    background-color: #000000;
+}
+
+.wps-vainilla {
+    background-color: #DEB63F;
+}
+
+.wps-pistashio {
+    background-color: #379A5D;
+}
+.wps-chocolate {
+    background-color: #8F5247;
+}
+.wps-almond {
+    background-color: #BB6414;
+}
+.wps-mango {
+    background-color: #DF7F0A;
 }
 
 //DARK THEME

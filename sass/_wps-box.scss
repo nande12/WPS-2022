@@ -64,6 +64,34 @@
                 width: 36px;
                 height: 36px;
                 margin-right: 10px;
+                border-radius: 50%;
+                background-size: 100%;
+
+                &.ethereum {
+                    background-image: url('../img/ethereum-network.png');
+                }
+
+                &.ethereum-clasic {
+                    background-image: url('../img/ethereum-classic-network.png');
+                }
+
+                &.binance {
+                    background-image: url('../img/bsc-network.png');
+                }
+
+                &.polygon {
+                    background-image: url('../img/matic-network.png');
+                }
+
+                &.avalanche {
+                    background-image: url('../img/avax-network.png');
+                }
+
+                &.fanton {
+                    background-image: url('../img/fantom-network.png');
+                }
+
+
             }
         }
 
@@ -163,9 +191,9 @@
             .wps-box-title {
                 color: #ffffff;
 
-                .wps-box-title-icon {
-                    filter: brightness(0) invert(1);
-                }
+                // .wps-box-title-icon {
+                //     filter: brightness(0) invert(1);
+                // }
             }
 
             .wps-box-text {
